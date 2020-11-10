@@ -116,6 +116,9 @@ namespace Etc
 
 			mipWidth >>= 1;
 			mipHeight >>= 1;
+
+			if (mipWidth == 0) mipWidth = 1;
+			if (mipHeight == 0) mipHeight = 1;
 		}
 
 		*a_piEncodingTime_ms = totalEncodingTime;
